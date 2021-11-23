@@ -1,4 +1,4 @@
-# lista_tareas
+# Lista de Tareas
 
 ### Initial Configuration
 
@@ -6,18 +6,18 @@ This project include default migrations that you can see on the course, also inc
 
 1.- Clone this repository:
 
-                        git clone https://github.com/developerpe/ecommerce_rest.git 
+                        git clone https://github.com/nelsonarg34/lista_tareas.git 
 
 2.- Create a virtual environment :
 
-                                 virtualenv name_env
+                                 virtualenv venv
 
 3.- Active virtual environment.
 
 4.- Install libraries.
 
-                    (env) pip install -r requirements.txt 
+                    (venv) pip install -r requirements.txt 
 
 5.- Run command:
 
-                    (env) python manage.py runserver 
+                    (venv) python manage.py runserver 
