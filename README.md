@@ -1,23 +1,23 @@
 # Lista de Tareas
 
-### Initial Configuration
+### Configuración inicial
 
-This project include default migrations that you can see on the course, also include a SQLITE DB with example data. 
+Este proyecto incluye migraciones predeterminadas, también incluye una base de datos SQLITE con datos de ejemplo.
 
-1.- Clone this repository:
+1.- Clonar este repositorio:
 
                         git clone https://github.com/nelsonarg34/lista_tareas.git 
 
-2.- Create a virtual environment :
+2.- Crear un entorno virtual:
 
                                  virtualenv venv
 
-3.- Active virtual environment.
+3.- Active el entorno virtual.
 
-4.- Install libraries.
+4.- Instalar librerias.
 
                     (venv) pip install -r requirements.txt 
 
-5.- Run command:
+5.- Correr servidor:
 
                     (venv) python manage.py runserver 
