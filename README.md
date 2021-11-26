@@ -22,7 +22,6 @@ Este proyecto incluye migraciones predeterminadas, también incluye una base de 
 
     venv) python manage.py runserver 
 <br>
-<br>
 
 ## Autenticación y registro de usuarios
 
@@ -70,3 +69,52 @@ Tareas (GET, PUT, PATCH, DELETE): http://127.0.0.1:8000/api/tasks/1/
 ###     End points
 
 http://127.0.0.1:8000/api/list_filters/
+
+<br>
+
+## Proyecto con Docker
+
+1.- Creación del proyecto:
+
+    docker-compose run web django-admin startproject <nombre-proyecto> 
+
+2.- Construcción del contenedor:
+
+    docker-compose -f docker-compose.yml build
+
+3.- Modificar el archivo settings.py del proyecto:
+
+Realizar las siguientes modificaciones para poder comunicarnos con nuestra base de datos.
+
+    ALLOWED_HOSTS = ['*']
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.environ['POSTGRES_DB'],
+            'USER': os.environ['POSTGRES_USER'],
+            'PASSWORD': os.environ['POSTGRES_PASSWORD'],
+            'HOST': os.environ['POSTGRES_HOST'],
+            'PORT': os.environ['POSTGRES_PORT'],
+        }
+    }
+
+4.- Correr build y up:
+
+    docker-compose -f docker-compose.yml build
+    docker-compose up
+
+5.- Correr  makemigrations y migrate:
+
+    docker-compose -f .\docker-compose.yml run --rm web python manage.py makemigrations
+    docker-compose -f .\docker-compose.yml run --rm web python manage.py migrate
+
+6.- Crear super usuario:
+
+    docker-compose -f .\docker-compose.yml run --rm web python manage.py createsuperuser
+
+6.- Con el contenedor corriendo:
+
+    Acceder a http://localhost:8000/admin
+
+
