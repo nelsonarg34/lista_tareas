@@ -11,7 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Api routes
-    path('users/', include('authentication.urls')),
+    path('', include('authentication.urls')),
     path('api/',include('list.routers')),
 ]
 
