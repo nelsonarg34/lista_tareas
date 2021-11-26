@@ -34,7 +34,11 @@ Este proyecto incluye migraciones predeterminadas, también incluye una base de 
 ### End points
 
 http://localhost:8000/api/user/auth/login/
+
 http://localhost:8000/api/user/auth/logout/
+
 http://localhost:8000/api/user/auth/signup/
+
 http://localhost:8000/api/user/auth/reset/
+
 http://localhost:8000/api/user/profile/
