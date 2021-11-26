@@ -31,7 +31,7 @@ Este proyecto incluye migraciones predeterminadas, también incluye una base de 
     * Iniciar y cerrar sesión
     * Restaurar contraseña
 
-### End points
+###     End points
 
 http://localhost:8000/api/user/auth/login/
 
@@ -44,11 +44,12 @@ http://localhost:8000/api/user/auth/reset/
 http://localhost:8000/api/user/profile/
 
 
+
 ## Listas de tareas de usuarios
 
 Interacción entre los usuarios y listas de tareas
 
-### End points
+###     End points
 
 Listas (GET, POST): http://127.0.0.1:8000/api/lists/
 
@@ -59,8 +60,13 @@ Tareas (GET, POST): http://127.0.0.1:8000/api/tasks/
 Tareas (GET, PUT, PATCH, DELETE): http://127.0.0.1:8000/api/tasks/1/
 
 
+
 ## Búsquedas y filtros
 
-### End points
+- Búsqueda: Usando un texto y buscando coincidencias.
+- Ordenación: Ascendente o descendente a partir de varios campos.
+- Filtrado: En base a a partir de varios campos.
+
+###     End points
 
 http://127.0.0.1:8000/api/list_filters/
