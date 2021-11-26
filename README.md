@@ -21,15 +21,15 @@ Este proyecto incluye migraciones predeterminadas, también incluye una base de 
 5.- Correr servidor:
 
     venv) python manage.py runserver 
-
-
+<br>
+<br>
 
 ## Autenticación y registro de usuarios
 
 ### Características
-    * Registrar una cuenta
-    * Iniciar y cerrar sesión
-    * Restaurar contraseña
+- Registrar una cuenta
+- Iniciar y cerrar sesión
+- Restaurar contraseña
 
 ###     End points
 
@@ -43,7 +43,7 @@ http://localhost:8000/api/user/auth/reset/
 
 http://localhost:8000/api/user/profile/
 
-
+<br>
 
 ## Listas de tareas de usuarios
 
@@ -59,7 +59,7 @@ Tareas (GET, POST): http://127.0.0.1:8000/api/tasks/
 
 Tareas (GET, PUT, PATCH, DELETE): http://127.0.0.1:8000/api/tasks/1/
 
-
+<br>
 
 ## Búsquedas y filtros
 
