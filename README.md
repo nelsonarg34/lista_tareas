@@ -10,14 +10,14 @@ Este proyecto incluye migraciones predeterminadas, también incluye una base de 
 
 2.- Crear un entorno virtual:
 
-                                 virtualenv venv
+                        virtualenv venv
 
 3.- Active el entorno virtual.
 
 4.- Instalar librerias.
 
-                    (venv) pip install -r requirements.txt 
+                        (venv) pip install -r requirements.txt 
 
 5.- Correr servidor:
 
-                    (venv) python manage.py runserver 
+                        venv) python manage.py runserver 
