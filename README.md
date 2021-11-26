@@ -27,9 +27,9 @@ Este proyecto incluye migraciones predeterminadas, también incluye una base de 
 ## Autenticación y registro de usuarios
 
 ### Características
-    -Registrar una cuenta
-    -Iniciar y cerrar sesión
-    -Restaurar contraseña
+    * Registrar una cuenta
+    * Iniciar y cerrar sesión
+    * Restaurar contraseña
 
 ### End points
 
@@ -42,3 +42,25 @@ http://localhost:8000/api/user/auth/signup/
 http://localhost:8000/api/user/auth/reset/
 
 http://localhost:8000/api/user/profile/
+
+
+## Listas de tareas de usuarios
+
+Interacción entre los usuarios y listas de tareas
+
+### End points
+
+Listas (GET, POST): http://127.0.0.1:8000/api/lists/
+
+Listas (GET, PUT, PATCH, DELETE): http://127.0.0.1:8000/api/lists/1/
+
+Tareas (GET, POST): http://127.0.0.1:8000/api/tasks/
+
+Tareas (GET, PUT, PATCH, DELETE): http://127.0.0.1:8000/api/tasks/1/
+
+
+## Búsquedas y filtros
+
+### End points
+
+http://127.0.0.1:8000/api/list_filters/
